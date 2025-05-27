@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-elemento</title>
+  <style>
+    .decorado {
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .decorado::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 10px;
+      height: 100%;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="decorado">Alguma coisa</h2>
+</body>
+</html>
