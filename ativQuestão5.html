@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Dropdown</title>
+  <style>
+    .menu {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu > li {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background: #eee;
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+    }
+
+    .has-submenu:hover .submenu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li>Mural</li>
+    <li class="has-submenu">Atividades
+      <ul class="submenu">
+        <li>Entregues</li>
+        <li>Pendentes</li>
+      </ul>
+    </li>
+    <li class="has-submenu">Pessoas
+      <ul class="submenu">
+        <li>Professores</li>
+        <li>Colegas</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
